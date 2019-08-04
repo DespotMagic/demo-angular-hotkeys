@@ -1,0 +1,53 @@
+:host {
+  display: block;
+  height: 100%;
+    background-color: #f1f1f1; 
+    width: 40px; 
+    flex-shrink: 0;
+    border-right: 1px solid #aaa;
+}
+
+:host.expand {
+  width: 150px; 
+}
+
+p {
+  margin: 5px;
+  padding: 5px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+p.active {
+  border-radius: 0px 20px 20px 0px;
+  background: #49ff58;
+  border-left: 5px solid green;
+}
+
+.sidebar_title {
+  padding: 15px 10px;
+  background-color: #ddd;
+}
+
+.collapse_sidebar_button {
+  cursor: pointer;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAnklEQVQ4T63USw6CQBBF0csSRbeAyGJUGJq4DT+rQ1ODnhjlvWrsKemTWxSh4c+nqfQGYAYun/drwMCOQAs814KBnYDNNyzwTKHEMqCFuWDB4p091BLVyClMFRZsC9xVWXn+q7AKWyos4A64uXXuyClULeUAnAEbVWBMkUIdMNAeGJ1SF7TRDBjoHpiWSrOgRGvAQDvgBVzX/g/lN/4GYg0kFQb25ykAAAAASUVORK5CYII=');
+  color: black;
+  width: 20px;
+  height: 20px;
+  float: right;
+}
+
+.expand_sidebar_text {
+  writing-mode: tb-rl;
+  transform:rotate(180deg);
+  font-size:25px;
+  color: #999;
+  cursor: pointer;
+  padding-bottom: 15px;
+  line-height: 40px;
+}
+
+  .expand_sidebar_text:hover {
+  color: #333;
+}

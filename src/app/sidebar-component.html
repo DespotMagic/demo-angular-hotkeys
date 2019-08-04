@@ -1,0 +1,16 @@
+      <div *ngIf="sidebarExpanded">
+        <div class="sidebar_title">
+          <strong>SIDEBAR</strong> 
+          <div class="collapse_sidebar_button" (click)="collapseExpandSidebar()"> </div>
+        </div>
+
+        <p *ngFor="let item of menu; index as i" 
+        [class.active]="activeIndex === i"
+        (click)="activeIndex = i">
+          {{item}}</p>
+
+      </div>
+
+      <div *ngIf="!sidebarExpanded" class="expand_sidebar_text" (click)="collapseExpandSidebar()">
+        Click to expand sidebar
+      </div>
