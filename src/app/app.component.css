@@ -42,6 +42,7 @@ p {
     flex-direction: column;
     flex-grow: 1;
     overflow-y: auto;
+    background-color: white;
   }
 
   .content {
@@ -62,6 +63,16 @@ p {
       flex: 1;
       min-height: 100px;
     }
+
+.resize-component-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.resize-component-container > * {
+  margin: 10px;
+}
+
 
 .footer {
   background-color: #102d50;

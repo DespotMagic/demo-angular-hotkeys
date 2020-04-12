@@ -7,9 +7,9 @@ import { ValHotKeysListener } from './hotkeys/hotkeys.decorator';
 @Component({
   selector: 'last-command',
   template: `<div>
-  <ul>
-   <li *ngFor="let command of commands">{{command}}</li>
-  </ul>
+    <ul>
+      <li *ngFor="let command of commands">{{command}}</li>
+    </ul>
   </div>`
 })
 export class LastCommandComponent  {

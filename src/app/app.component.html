@@ -1,32 +1,40 @@
 <header class="header">
-  <div class="header__logo">LOGO</div>
-  <div class="header__text">ANGULAR HOTKEY APPLICATION</div>
+	<div class="header__logo">LOGO</div>
+	<div class="header__text">ANGULAR HOTKEY APPLICATION</div>
 </header>
 
 <main class="body">
 
-  <sidebar></sidebar>
+	<sidebar></sidebar>
 
-  <div class="body__content">
+	<div class="body__content" #bodyContent>
 
-      <div class="content content__top">
-          Test page
-      </div>
-      <div class="content content__body">
-        A few examples.
-        <h3>1. Resize Component (use "Ctrl +" and "Ctrl -")</h3>
-        <resize-component></resize-component>
-        <h3>2. Last hotkey commands (press "Ctrl + e" for clear):</h3>
-        <last-command></last-command>
-      </div>
-      
-  </div>
+		<div class="content content__top">
+			Test page
+		</div>
+		<div class="content content__body">
+			<div>FullScreen: Alt + F</div>
+
+			<h3>Resize Components</h3>
+			Add: "Alt + A" | Remove: "Alt + D" | Resize: "Ctrl +" and "Ctrl -"
+			<div class="resize-component-container">
+				<ng-container *ngFor="let i of items">
+					<resize-component></resize-component>
+				</ng-container>
+			</div>
+
+			<h3>Last hotkey commands (press "Ctrl + e" for clear):</h3>
+			<last-command></last-command>
+
+		</div>
+
+	</div>
 
 </main>
 
 <footer class="footer">
-  (c) footer, 
-  <a href="https://angular.io/">Angular</a> , 
-  <a href="https://www.typescriptlang.org/docs/handbook/decorators.html">Decorators</a> , 
+	(c) footer,
+	<a href="https://angular.io/">Angular</a> ,
+	<a href="https://www.typescriptlang.org/docs/handbook/decorators.html">Decorators</a> ,
 
 </footer>

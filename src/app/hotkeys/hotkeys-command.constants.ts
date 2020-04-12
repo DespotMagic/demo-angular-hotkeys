@@ -15,7 +15,7 @@ export namespace HotKeysCommand {
 		export enum Commmon {
 			AddNewItem = 'General.Commmon: Add item',
 			DeleteItem = 'General.Commmon: Delete item',
-			FullScreen = 'General.Commmon: Expand/Collapse full screen'
+			FullScreen = 'General.Commmon: Full screen'
 		}
 
 		export enum Resize {
